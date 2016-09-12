@@ -256,9 +256,11 @@ li{
 
 .bg{
 	background: url(../img/gplaypattern.png) repeat;
+	min-height: 480px;
 }
 
 .courses{
+	display: none;
 	padding-top: 100px;
 	margin-bottom: 72px;
 }
@@ -341,4 +343,16 @@ footer{
 p.copiright{
 	padding-top: 20px;
 	text-align: center;
+}
+
+.done{
+	padding-top: 200px;
+	text-align: center;
+}
+
+.done>span{
+	background: url(../img/done.png) no-repeat left;
+	font-size: 42px;
+	padding-left: 40px;
+	color: #8CC34B;
 }

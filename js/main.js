@@ -16,8 +16,16 @@
 
 $(function() {
   $(".course_items .field_complete input").click(function() {
-    $(".course_items .field_complete input").addClass('submit');
-    // var index = $(this).parent().index( "ul li" );
+
+  	if ($(".course_items .field_complete input").is(':checked')){
+  		$(".course_items").addClass('submit bg_done');
+
+    setTimeout(function(){
+    	$('.course_items').fadeOut('fast')
+    },1000);
+
+  	}
+
   })
 });
 
