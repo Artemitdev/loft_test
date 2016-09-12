@@ -1,3 +1,67 @@
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans/FiraSans-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans/FiraSans-BoldItalic.ttf') format('ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans/FiraSans-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans/FiraSans-Light.ttf') format('ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans/FiraSans-LightItalic.ttf') format('ttf');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans-Medium';
+  src: url('../fonts/FiraSans/FiraSans-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans-Medium';
+  src: url('../fonts/FiraSans/FiraSans-MediumItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans/FiraSans-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/FontAwesome/fontawesome-webfont.ttf') format('ttf'),
+  src: url('../fonts/FontAwesome/FontAwesome.otf') format('otf')
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 html{
@@ -40,6 +104,7 @@ img.avatar{
 }
 
 .name{
+	font-family: 'Fira Sans',sans-serif;
 	font-size: 21px;
 	color: rgb(255, 255, 255);
 	text-align: left;
@@ -51,32 +116,48 @@ img.avatar{
 	text-align: left;
 }
 
+.email a{
+	font-family: 'Fira Sans',sans-serif;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
 h1, h2{
 	text-align: center;
 }
 
 h1{
-	font-size: 40px;
+	font-family: 'Fira Sans',sans-serif;
+	font-weight: 500;
+	font-size: 42px;
 	margin-bottom: 15px;
 }
 
 h2{
+	font-family: 'Fira Sans',sans-serif;
+	font-weight: 300;
 	font-size: 22px;
 	color: rgb(114, 114, 114);
 	margin-bottom: 40px;
 }
 
 h3{
+	font-family: 'Fira Sans',sans-serif;
+	font-weight: 400;
 	font-size: 21px;
 	margin-bottom: 10px;
 }
 
 h4{
+	font-family: 'Fira Sans',sans-serif;
+	font-weight: 400;
 	font-size: 22px;
 	margin-bottom: 10px;
 }
 
 .desc p{
+	font-family: Arial;
+	font-weight: 300;
 	color: rgb(114, 114, 114);
 	margin-bottom: 20px;
 }
@@ -154,6 +235,12 @@ li{
 .about_block{
 	display: inline-block;
 	width: 300px;
+}
+
+.about_block p{
+	font-family: 'Fira Sans',sans-serif;
+	font-weight: 300;
+	color: #727272;
 }
 
 .blocks{
@@ -235,6 +322,11 @@ li{
 .field_complete{
 	background-color: rgb(246, 247, 242);
 	padding: 20px;
+}
+
+.timeline{
+	background: url(../img/watch.png) no-repeat left top;
+	padding-left: 15px;
 }
 
 
