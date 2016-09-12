@@ -156,14 +156,17 @@ h4{
 }
 
 .desc p{
-	font-family: Arial;
+	font-family: 'Fira Sans',sans-serif;
+	line-height: 20px;
+	font-size: 14px;
 	font-weight: 300;
 	color: rgb(114, 114, 114);
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 label{
 	color: #8c8d8c;
+	font-family: 'Fira Sans',sans-serif;
 	font-size: 18px;
 }
 
@@ -249,11 +252,6 @@ li{
 	vertical-align: top;
 }
 
-.timeline{
-	font-size: 14px;
-	color: rgb(182, 182, 182);
-}
-
 .bg{
 	background: url(../img/gplaypattern.png) repeat;
 	min-height: 480px;
@@ -297,7 +295,37 @@ li{
 }
 /* END при наведении выводим бордер и подсвечиваем заголовок c небольшой анимацией*/
 
+input[type=checkbox] {
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: -2px 13px 0 0;
+	vertical-align: middle;
+	outline: none;
+}
 
+input[type=checkbox]:before {
+	position: absolute;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	content: '';
+	cursor: pointer;
+	border: 2px solid #b6b6b6;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+input[type=checkbox]:checked:before {
+	content: '';
+	border: 2px solid #8cc34b;
+	background-color: #8cc34b;
+	background-image: url(../img/submit.png);
+	background-position: 3px 4px;
+	background-repeat: no-repeat;
+}
 
 /*при сабмите меняем фон и делаем прозрачность уже установленным фонам*/
 .bg_done{
@@ -316,7 +344,7 @@ li{
 
 
 .desc{
-	padding: 12px;
+	padding: 20px;
 }
 
 
@@ -326,8 +354,12 @@ li{
 }
 
 .timeline{
-	background: url(../img/watch.png) no-repeat left top;
+	background: url(../img/watch.png) no-repeat left 2px;
 	padding-left: 15px;
+	font-family: 'Fira Sans',sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgb(182, 182, 182);
 }
 
 

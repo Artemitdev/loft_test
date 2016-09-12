@@ -15,7 +15,7 @@
 })();*/
 
 $(function() {
-  $(".course_items .field_complete input").click(function() {
+  $("input").click(function(event) {
 
   	if ($(".course_items .field_complete input").is(':checked')){
   		$(".course_items").addClass('submit bg_done');
@@ -23,12 +23,21 @@ $(function() {
   		$(".courses").css("display", "none");
 
     setTimeout(function(){
-    	$('.course_items .courses').fadeOut('fast')
-    },1000);
-
+    	$('.course_items').fadeOut('fast')
+    },2000);
   	}
   })
 });
+
+// $("input").change(function(){
+// 	this.checked&&($(".courses-item").removeClass("active"),
+// 		$(this).closest(".courses-item").addClass("active"),setTimeout(function(){
+// 			$(".courses-item.active").remove()
+// 		},1e3),
+// 		setTimeout(function(){$("*").hasClass("courses-item")||($(".courses-header").remove(),
+// 			$(".complete").css("display","block")
+// 			)},
+// 		1e3))});
 
 
 
