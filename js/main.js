@@ -19,13 +19,14 @@ $(function() {
 
   	if ($(".course_items .field_complete input").is(':checked')){
   		$(".course_items").addClass('submit bg_done');
+  		$(".done").css("display", "block");
+  		$(".courses").css("display", "none");
 
     setTimeout(function(){
-    	$('.course_items').fadeOut('fast')
+    	$('.course_items .courses').fadeOut('fast')
     },1000);
 
   	}
-
   })
 });
 

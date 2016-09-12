@@ -260,7 +260,6 @@ li{
 }
 
 .courses{
-	display: none;
 	padding-top: 100px;
 	margin-bottom: 72px;
 }
@@ -346,13 +345,17 @@ p.copiright{
 }
 
 .done{
-	padding-top: 200px;
+	display: none;
+	padding-top: 160px;
 	text-align: center;
 }
 
 .done>span{
 	background: url(../img/done.png) no-repeat left;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
 	font-size: 42px;
 	padding-left: 40px;
 	color: #8CC34B;
+
 }
